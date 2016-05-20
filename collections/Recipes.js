@@ -16,6 +16,9 @@ RecipeSchema = new SimpleSchema({
     label: "Author",
     autoValue() {
       return this.userId();
+    },
+    autoform: {
+      type: "hidden"
     }
   },
 
@@ -24,6 +27,9 @@ RecipeSchema = new SimpleSchema({
     label: "Create At",
     autoValue() {
       return new Date();
+    },
+    autoform: {
+      type: "hidden"
     }
   }
 });
