@@ -78,5 +78,9 @@ Meteor.methods({
         inMenu: !currentState
       }
     });
+  },
+
+  "deleteRecipe"(id) {
+    Recipes.remove(id);
   }
 });

@@ -8,5 +8,14 @@ Template.Recipe.helpers({
 Template.Recipe.events({
   "click .toggle-menu"() {
     Meteor.call("toggleInMenu", this._id, this.inMenu);
+  },
+
+  "click .fa-trash"() {
+    Meteor.call("deleteRecipe", this._id);
+  },
+
+  "click .fa-pencil"() {
+    var currentEditMode = Session.get("editMode");
+    Session.set("editMode", !currentEditMode);
   }
 });
