@@ -14,11 +14,11 @@
         <span class="ingredient">{{name}} - {{amount}}</span>
         {{/each}}
       </p>
-      <a href="/recipe/{{_id}}">View details</a>
+      <a href="/recipe/{{_id}}">{{_"view_details"}}</a>
       {{#if inMenu}}
-        <button class="btn-deny toggle-menu">Remove From Menu</button>
+        <button class="btn-deny toggle-menu">{{_"remove_from_menu"}}</button>
       {{else}}
-        <button class="btn-primary toggle-menu">Add to Menu</button>
+        <button class="btn-primary toggle-menu">{{_"add_to_menu"}}</button>
       {{/if}}
     {{/if}}
   </article>

@@ -14,9 +14,11 @@ Recipes.allow({
 Ingredient = new SimpleSchema({
   name: {
     type: String,
+    label: () => TAPi18n.__("name")
   },
   amount: {
     type: String,
+    label: () => TAPi18n.__("amount")
   }
 });
 
@@ -24,16 +26,17 @@ Ingredient = new SimpleSchema({
 RecipeSchema = new SimpleSchema({
   name: {
     type: String,
-    label: "Name"
+    label: () => TAPi18n.__("name")
   },
 
   desc: {
     type: String,
-    label: "Description",
+    label: () => TAPi18n.__("desc"),
   },
 
   ingredients: {
-    type: [Ingredient]
+    type: [Ingredient],
+    label: () => TAPi18n.__("ingredients")
   },
 
   inMenu: {
@@ -47,7 +50,7 @@ RecipeSchema = new SimpleSchema({
 
   author: {
     type: String,
-    label: "Author",
+    label: () => TAPi18n.__("author"),
     autoValue() {
       return this.userId;
     },
@@ -58,7 +61,7 @@ RecipeSchema = new SimpleSchema({
 
   createAt: {
     type: Date,
-    label: "Create At",
+    label: () => TAPi18n.__("created_at"),
     autoValue() {
       return new Date();
     },
