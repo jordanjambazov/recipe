@@ -2,7 +2,10 @@
   <article class="recipe {{#if inMenu}}in-menu{{/if}}">
     <h3>{{name}}</h3>
 
-    {{#if $.Session.get 'editMode'}}
+    <i class="fa fa-pencil"></i>
+    <i class="fa fa-trash"></i>
+
+    {{#if editMode}}
       {{>quickForm collection="Recipes" id=updateRecipeId type="update" doc=this autosave=true}}
     {{else}}
       <p>{{desc}}</p>
@@ -12,8 +15,6 @@
         {{/each}}
       </p>
       <a href="/recipe/{{_id}}">View details</a>
-      <i class="fa fa-pencil"></i>
-      <i class="fa fa-trash"></i>
       {{#if inMenu}}
         <button class="btn-deny toggle-menu">Remove From Menu</button>
       {{else}}
