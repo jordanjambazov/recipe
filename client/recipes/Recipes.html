@@ -1,4 +1,5 @@
 <template name="Recipes">
+  <h1 class="page-title">{{_"recipes"}}</h1>
   {{#if $.Session.get "newRecipe"}}
     {{> NewRecipe}}
   {{else}}
