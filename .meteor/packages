@@ -28,7 +28,6 @@ raix:handlebar-helpers
 aldeed:collection2
 aldeed:autoform
 accounts-ui
-accounts-password
 matb33:bootstrap-glyphicons
 zimme:active-route
 gwendall:auth-client-callbacks
@@ -36,3 +35,4 @@ meteortoys:allthings
 datariot:ganalytics
 check
 tap:i18n
+accounts-facebook

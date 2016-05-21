@@ -17,3 +17,4 @@ created_at: "Създадено на"
 ingredients: "Съставки"
 amount: "Количество"
 submit: "Добави"
+please_add_recipes: 'Моля, <a href="/recipe-book">добавете рецепти</a> към вашето меню.'

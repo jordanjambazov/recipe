@@ -17,3 +17,4 @@ created_at: "Created At"
 ingredients: "Ingredients"
 amount: "Amount"
 submit: "Submit"
+please_add_recipes: 'Please <a href="/recipe-book">add recipes</a> to your menu.'

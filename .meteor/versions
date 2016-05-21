@@ -1,5 +1,6 @@
 accounts-base@1.2.7
-accounts-password@1.1.8
+accounts-facebook@1.0.9
+accounts-oauth@1.1.12
 accounts-ui@1.1.9
 accounts-ui-unstyled@1.1.12
 aldeed:autoform@5.8.1
@@ -38,6 +39,7 @@ ejson@1.0.11
 email@1.0.12
 erasaur:meteor-lodash@4.0.0
 es5-shim@4.5.10
+facebook@1.2.6
 fastclick@1.0.11
 fortawesome:fontawesome@4.5.0
 geojson-utils@1.0.8
@@ -88,8 +90,9 @@ mongo@1.1.7
 mongo-id@1.0.4
 msavin:jetsetter@2.0.0
 msavin:mongol@2.0.1
-npm-bcrypt@0.8.5
 npm-mongo@1.4.43
+oauth@1.1.10
+oauth2@1.1.9
 observe-sequence@1.0.11
 ordered-dict@1.0.7
 promise@0.6.7
@@ -104,11 +107,9 @@ retry@1.0.7
 routepolicy@1.0.10
 service-configuration@1.0.9
 session@1.1.5
-sha@1.0.7
 spacebars@1.0.11
 spacebars-compiler@1.0.11
 spiderable@1.0.13
-srp@1.0.8
 standard-minifier-css@1.0.6
 standard-minifier-js@1.0.6
 stolinski:stylus-multi@1.4.3
